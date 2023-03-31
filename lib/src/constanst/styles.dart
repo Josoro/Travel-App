@@ -7,13 +7,17 @@ const Color kTransparent = Colors.transparent;
 
 const Color kWhite = Colors.white;
 
-const kCardInfoBG = Color(0XFF686868);
+const kGrey = Colors.grey;
 
 const double kBorderAppBar = 25.0;
 
+const double kBorderRadius = 10.0;
+
+const double kPadding = 10.0;
+
 final cardInfoDecoration = BoxDecoration(
   borderRadius: BorderRadius.circular(15),
-  color: kCardInfoBG.withOpacity(0.6),
+  color: kGrey.withOpacity(0.6),
 );
 
 final likedWidgetDecoration =

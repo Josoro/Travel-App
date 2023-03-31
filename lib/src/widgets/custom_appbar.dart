@@ -17,11 +17,11 @@ class CustomAppBar extends StatelessWidget {
           InkWell(
             onTap: () {},
             child: Container(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(kPadding),
               decoration: BoxDecoration(
                   color: kWhite,
                   boxShadow: const [BoxShadow(color: kBlack, blurRadius: 1)],
-                  borderRadius: BorderRadius.circular(10)),
+                  borderRadius: BorderRadius.circular(kBorderRadius)),
               child: const Icon(
                 Icons.sort_rounded,
                 size: 28,
@@ -43,11 +43,11 @@ class CustomAppBar extends StatelessWidget {
           InkWell(
             onTap: () {},
             child: Container(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(kPadding),
               decoration: BoxDecoration(
                   color: kWhite,
                   boxShadow: const [BoxShadow(color: kBlack, blurRadius: 1)],
-                  borderRadius: BorderRadius.circular(10)),
+                  borderRadius: BorderRadius.circular(kBorderRadius)),
               child: const Icon(
                 Icons.search,
                 size: 28,

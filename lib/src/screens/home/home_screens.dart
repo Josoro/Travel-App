@@ -17,9 +17,19 @@ class _HomeScreensState extends State<HomeScreens> {
     return const Scaffold(
       appBar: PreferredSize(
           preferredSize: Size.fromHeight(90), child: CustomAppBar()),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [PopularPlaces()],
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 15),
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              SizedBox(height: 20),
+              CardsPlaces(),
+              SizedBox(height: 20),
+              Category(),
+              SizedBox(height: 20),
+              PopularPlaces()
+            ],
+          ),
         ),
       ),
     );

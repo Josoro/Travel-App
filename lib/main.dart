@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:travel_app/src/screens/screens.dart';
+import 'package:travel_app/src/theme/my_theme.dart';
 
 import 'src/routes/routes.dart';
 
@@ -25,6 +26,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: myTheme,
       initialRoute: WelcomeScreen.routeName,
       routes: routes,
     );
