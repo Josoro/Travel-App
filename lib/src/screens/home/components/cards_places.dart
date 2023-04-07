@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travel_app/src/constanst/styles.dart';
 
 import '../../../constanst/size_config.dart';
-import '../../../models/places.dart';
+import '../../../models/places_model.dart';
 
 class CardsPlaces extends StatelessWidget {
   static String routeName = '/popular_places';

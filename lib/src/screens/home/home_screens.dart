@@ -3,15 +3,10 @@ import 'package:travel_app/src/screens/screens.dart';
 
 import '../../widgets/widgets.dart';
 
-class HomeScreens extends StatefulWidget {
+class HomeScreens extends StatelessWidget {
   static String routeName = '/home';
   const HomeScreens({super.key});
 
-  @override
-  State<HomeScreens> createState() => _HomeScreensState();
-}
-
-class _HomeScreensState extends State<HomeScreens> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
@@ -27,7 +22,7 @@ class _HomeScreensState extends State<HomeScreens> {
               SizedBox(height: 20),
               Category(),
               SizedBox(height: 20),
-              PopularPlaces()
+              PopularPlaces(),
             ],
           ),
         ),
